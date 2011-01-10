@@ -1,7 +1,8 @@
 Revision history for Perl extension {{$dist->name}}
 
 {{$NEXT}}
-    + added Class::XSAccessor::Compat (thanks tsee)
+    - added Class::XSAccessor::Compat (thanks tsee)
+    - added Class::Accessor::Lite
 
 1.102630  2010-09-20 15:22:11 Europe/Vienna
 
