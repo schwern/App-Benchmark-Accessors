@@ -66,6 +66,10 @@ rw 'myattr';
 no  Class::Accessor::Classy;
 
 package    # hide from PAUSE
+  WithClassAccessorLite;
+use Class::Accessor::Lite new => 1, rw => [qw(myattr)];
+
+package    # hide from PAUSE
   WithMojo;
 use parent qw(Mojo::Base);
 __PACKAGE__->attr('myattr');
@@ -147,7 +151,11 @@ following generators are being benchmarked:
 
 =item Moose
 
+mutable and immutable
+
 =item Mouse
+
+mutable and immutable
 
 =item Class::Accessor
 
@@ -160,6 +168,10 @@ following generators are being benchmarked:
 =item Class::Accessor::Complex
 
 =item Class::Accessor::Constructor
+
+=item Class::Accessor::Classy
+
+=item Class::Accessor::Lite
 
 =item Mojo::Base
 
@@ -176,6 +188,12 @@ following generators are being benchmarked:
 =item Class::XSAccessor
 
 =item Class::XSAccessor::Array
+
+=item Object::Tiny
+
+=item Rose
+
+=item Rubyish::Attribute
 
 =back
 
