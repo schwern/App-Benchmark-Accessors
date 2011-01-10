@@ -1,6 +1,8 @@
 Revision history for Perl extension {{$dist->name}}
 
 {{$NEXT}}
+
+1.110100  2011-01-10 13:11:46 Europe/Vienna
     - added Class::XSAccessor::Compat (thanks tsee)
     - added Class::Accessor::Lite
 
